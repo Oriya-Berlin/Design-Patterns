@@ -5,7 +5,7 @@ public class Main {
 
 
     // PROTOTYPE based FACTORY  -  implementation
-    public static void main(String[] args){
+    public static void main(String[] args) {
 
         // create some objects
         Message mailMsg = new Mail();
@@ -27,6 +27,19 @@ public class Main {
         newMsg.print(); // (should be null)
         newMsg.set("bla bla", "just a simple text");
         newMsg.print();
+
+
+        // ------------------------------------------------------------------------------
+
+        // In Java we actually can do something like this, and we don't need to use Factory design pattern
+        // Java already handle that issue
+        /**
+            Class msgClass = faxMsg.getClass();
+            Message message = (Message) msgClass.newInstance();
+            message.set("example", "example text");
+            message.print();
+         **/
+        // ------------------------------------------------------------------------------
     }
 
 }
