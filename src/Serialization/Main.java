@@ -6,6 +6,7 @@ import java.util.ArrayList;
 
 public class Main {
 
+    // TODO: implement some design patterns in the serialization process
 
     public static void main(String[] args) {
         serialize();
