@@ -1,6 +1,6 @@
 package Adapter.implementation_1;
 
-public claMain {
+public class Main {
 
     public static void main(String[] args){
 
