@@ -2,18 +2,19 @@ package Adapter.implementation_2;
 
 public class VideoMessage implements Message {
 
-    private Video videoMsg;
+    private String address;
+    private Video content; // video MSG
 
     @Override
     public void set(String s1, String s2) {
-        // some implementation...
+        this.address = s1;
+        this.content = new Video(s2);
     }
 
     @Override
     public void print() {
-
-        videoMsg.load();
-        videoMsg.play();
+        content.load();
+        content.play();
     }
 
 

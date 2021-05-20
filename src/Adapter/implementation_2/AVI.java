@@ -2,6 +2,10 @@ package Adapter.implementation_2;
 
 public class AVI extends Video {
 
+    public AVI(String videoURL) {
+        super(videoURL);
+    }
+
     @Override
     public void load() {
 

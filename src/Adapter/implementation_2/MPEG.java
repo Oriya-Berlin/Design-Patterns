@@ -2,6 +2,10 @@ package Adapter.implementation_2;
 
 public class MPEG extends Video {
 
+    public MPEG(String videoURL) {
+        super(videoURL);
+    }
+
     @Override
     public void load() {
 
