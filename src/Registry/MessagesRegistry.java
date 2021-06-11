@@ -4,8 +4,8 @@ import java.util.HashMap;
 
 public class MessagesRegistry {
 
-    public static MessagesRegistry instance = null;
-    HashMap<String,Message> items;
+    private static MessagesRegistry instance = null;
+    private HashMap<String,Message> items;
 
 
     private MessagesRegistry(){
