@@ -21,12 +21,19 @@ public class Main {
         messageFactory.addPrototype(faxMsg);
 
         // now we are creating the NEW objects with the same types
-        Message newMsg = messageFactory.createObject(mailMsg.getType());
+        Message newMsg_1 = messageFactory.createObject(mailMsg.getType());
+        Message newMsg_2 = messageFactory.createObject(mailMsg.getType());
 
         // test
-        newMsg.print(); // (should be null)
-        newMsg.set("bla bla", "just a simple text");
-        newMsg.print();
+        newMsg_1.set("bla bla", "just a simple text");
+        newMsg_2.set("aaaa", "bbbbb");
+
+
+        newMsg_1.print();
+        newMsg_2.print();
+
+
+
 
 
         // ------------------------------------------------------------------------------

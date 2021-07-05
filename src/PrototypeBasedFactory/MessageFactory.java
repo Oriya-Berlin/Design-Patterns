@@ -8,7 +8,7 @@ public class MessageFactory {
     private static MessageFactory instance = null;
     private static HashMap<String, Message> prototypes;
 
-    public MessageFactory(){
+    private MessageFactory(){
         prototypes = new HashMap<>();
     }
 
@@ -30,7 +30,7 @@ public class MessageFactory {
     }
 
     public Message createObject(String type){
-        return prototypes.get(type);
+        return prototypes.get(type).copy();
     }
 
 
