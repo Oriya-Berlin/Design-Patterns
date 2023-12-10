@@ -1,6 +1,6 @@
 package Factory;
 
-public enum MSG {
+public enum MsgEnum {
     MAIL,
     FAX
 }

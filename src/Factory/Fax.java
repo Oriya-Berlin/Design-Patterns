@@ -1,6 +1,6 @@
 package Factory;
 
-public class Fax implements Message, Cloneable{
+public class Fax implements Message{
 
     private String address;
     private String content;
@@ -31,14 +31,14 @@ public class Fax implements Message, Cloneable{
     }
 
     @Override
-    public void set(String s1, String s2) {
-        this.address = s1;
-        this.content = s2;
+    public void set(String address, String content) {
+        this.address = address;
+        this.content = content;
     }
 
     @Override
     public void print() {
-        System.out.println(this.toString());
+        System.out.println(this);
     }
 
 

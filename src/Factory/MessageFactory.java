@@ -2,15 +2,15 @@ package Factory;
 
 public class MessageFactory {
 
-    public static Message createMessage(Enum<?> type){
+    public static Message createMessage(MsgEnum type){
 
         if(type == null)
             return null;
 
-        if(type.equals(MSG.FAX))
+        if(type.equals(MsgEnum.FAX))
             return new Fax();
 
-        else if(type.equals(MSG.MAIL))
+        else if(type.equals(MsgEnum.MAIL))
             return new Mail();
 
         // etc..
